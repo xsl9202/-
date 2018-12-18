@@ -1,0 +1,13 @@
+<!--pages/detail/detail.wxml-->
+<view class='img-box'>
+ <image src="{{imgurl}}" data-src="{{imgurl}}" bindtap="saveImage"></image>
+</view>
+<view class='shar'>
+<view>点击图片，长按保存</view>
+<view>点击右上角按钮分享给好友</view>
+<view>识别图中二维码，保存名片至通讯录</view>
+</view>
+<!-- 广告 -->
+<!-- <view class='adv'>
+<image src='/images/adv.png'></image>
+</view> -->

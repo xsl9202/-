@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<view class='img-box'>
+ <image src='{{list.url}}'></image>
+ <text class='InputName' style='top:{{nameInfo.y*0.719-2}}rpx;left:{{nameInfo.x*0.719}}rpx;font-size:{{nameInfo.font_size}}rpx;color:#{{nameInfo.font_color}};line-height:{{nameInfo.font_size}}rpx;height:{{nameInfo.font_size}}rpx;'>{{name}}</text>
+ <text class='InputTel' style='top:{{phoneInfo.y*0.719-6}}rpx;left:{{phoneInfo.x*0.719}}rpx;font-size:{{phoneInfo.font_size}}rpx;color:#{{phoneInfo.font_color}};;line-height:{{nameInfo.font_size}}rpx;height:{{nameInfo.font_size}}rpx;'>{{tel}}</text>
+</view>
+<!-- 输入框 -->
+<view class='wrap'>
+  <view class='name'>
+   <image class='icon' src='/images/name_icon.png' ></image><input placeholder='请填写姓名' bindinput="InputName" type='text'></input>
+  </view>
+  <view class='tel'>
+   <image class='icon' src='/images/phone_icon.png' ></image>
+   <input placeholder='请填写手机号码' bindinput="InputTel" type='number' maxlength="11"></input>
+  </view>
+  <button bindtap="check" disabled='{{disabled}}' class="btn-charge">一键生成 </button>
+</view>
+<!-- 广告 -->
+<!-- <view class='adv'>
+<image src='/images/adv.png'></image>
+</view> -->
